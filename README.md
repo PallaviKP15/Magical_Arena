@@ -24,6 +24,8 @@ Consider two players: <br>
   <li>Player B has 100 health, 10 strength and 5 attack</li>
 </ul>
 
+PlayerA with lower health i.e 50 attacks first at the start of a match. 
+
 PlayerA : { health=50, strength=5, attack=10 }<br>
 PlayerB : { health=100, strength=10, attack=5 }<br>
 Attacker rolls 4, Defender rolls 5<br>
