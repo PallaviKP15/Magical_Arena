@@ -1,0 +1,58 @@
+consider below test case:-
+
+PlayerA :: health:25 strength:10 attack:5
+PlayerB :: health:50 strength:5 attack:10
+
+PlayerA with lower health attacks first at the start of a match. 
+
+Iterations:
+
+PlayerA : { health=25, strength=10, attack=5 }
+PlayerB : { health=50, strength=5, attack=10 }
+Attacker rolls 5, Defender rolls 5
+Attack damage: 25, Defense strength: 25
+Defender health reduced by 0 to 50
+
+PlayerB : { health=50, strength=5, attack=10 }
+PlayerA : { health=25, strength=10, attack=5 }
+Attacker rolls 5, Defender rolls 4
+Attack damage: 50, Defense strength: 40
+Defender health reduced by 10 to 15
+
+PlayerA : { health=15, strength=10, attack=5 }
+PlayerB : { health=50, strength=5, attack=10 }
+Attacker rolls 4, Defender rolls 6
+Attack damage: 20, Defense strength: 30
+Defender health reduced by 0 to 50
+
+PlayerB : { health=50, strength=5, attack=10 }
+PlayerA : { health=15, strength=10, attack=5 }
+Attacker rolls 3, Defender rolls 5
+Attack damage: 30, Defense strength: 50
+Defender health reduced by 0 to 15
+
+PlayerA : { health=15, strength=10, attack=5 }
+PlayerB : { health=50, strength=5, attack=10 }
+Attacker rolls 4, Defender rolls 1
+Attack damage: 20, Defense strength: 5
+Defender health reduced by 15 to 35
+
+PlayerB : { health=35, strength=5, attack=10 }
+PlayerA : { health=15, strength=10, attack=5 }
+Attacker rolls 2, Defender rolls 2
+Attack damage: 20, Defense strength: 20
+Defender health reduced by 0 to 15
+
+PlayerA : { health=15, strength=10, attack=5 }
+PlayerB : { health=35, strength=5, attack=10 }
+Attacker rolls 6, Defender rolls 2
+Attack damage: 30, Defense strength: 10
+Defender health reduced by 20 to 15
+
+PlayerB : { health=15, strength=5, attack=10 }
+PlayerA : { health=15, strength=10, attack=5 }
+Attacker rolls 5, Defender rolls 2
+Attack damage: 50, Defense strength: 20
+Defender health reduced by 30 to -15
+
+Player B wins!
